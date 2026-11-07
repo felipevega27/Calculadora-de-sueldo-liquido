@@ -12,6 +12,10 @@ const base: Entrada = {
   contrato: 'indefinido',
   salud: 'fonasa',
   planIsapreUF: 0,
+  sueldoBase: 0,
+  horasSemanales: 42,
+  trasladoMinutos: 0,
+  diasSemana: 5,
 }
 
 describe('impuesto único de segunda categoría', () => {

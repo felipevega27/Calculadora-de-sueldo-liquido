@@ -15,7 +15,11 @@ export interface TramoImpuesto {
 export interface Parametros {
   vigenteDesde: string
   revisadoEn: string
-  fuentes: { topes: string; comisionesAfp: string; impuesto: string }
+  fuentes: { topes: string; comisionesAfp: string; impuesto: string; jornada: string }
+  /** Jornada ordinaria máxima legal (Ley 21.561: 42 h desde abril de 2026, 40 h desde abril de 2028). */
+  jornadaSemanalHoras: number
+  /** Recargo legal de la hora extra, en %. */
+  recargoHoraExtra: number
   topeImponibleUF: number
   topeCesantiaUF: number
   tasaAfp: number
@@ -48,7 +52,17 @@ export interface Entrada {
   salud: TipoSalud
   /** Valor del plan de Isapre en UF (solo si salud = isapre). */
   planIsapreUF: number
+  /** Sueldo base para la hora extra (0 = usar el imponible). */
+  sueldoBase: number
+  /** Horas semanales del contrato. */
+  horasSemanales: number
+  /** Minutos de traslado al día, ida y vuelta. */
+  trasladoMinutos: number
+  /** Días que se trabaja a la semana. */
+  diasSemana: number
 }
+
+export type Vista = 'sueldo' | 'hora'
 
 export interface Resultado {
   imponible: number

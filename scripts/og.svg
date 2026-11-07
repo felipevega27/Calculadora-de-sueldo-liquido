@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Imagen para compartir (Open Graph). Para regenerar public/og.png, ver scripts/generar-imagenes.mjs -->
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#fondo)"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="80" y="86" width="84" height="84" rx="20" fill="#ffffff"/>
+    <text x="122" y="150" font-size="58" font-weight="700" fill="#0f766e" text-anchor="middle">$</text>
+
+    <text x="80" y="268" font-size="66" font-weight="700" fill="#ffffff">Calculadora de</text>
+    <text x="80" y="348" font-size="66" font-weight="700" fill="#ffffff">sueldo líquido</text>
+    <text x="80" y="414" font-size="30" fill="#ccfbf1">Chile · AFP, salud, cesantía e impuesto</text>
+    <text x="80" y="456" font-size="30" fill="#ccfbf1">Valor de la hora extra y valor hora real</text>
+
+    <text x="80" y="552" font-size="24" font-weight="600" fill="#5eead4">UF y UTM actualizadas cada día · Gratis</text>
+
+    <!-- Tarjeta de ejemplo -->
+    <rect x="730" y="120" width="390" height="390" rx="28" fill="#ffffff"/>
+    <text x="770" y="184" font-size="24" font-weight="600" fill="#334155">Tu sueldo líquido</text>
+    <text x="770" y="250" font-size="54" font-weight="700" fill="#0f766e">$1.982.158</text>
+
+    <rect x="770" y="282" width="310" height="16" rx="8" fill="#e2e8f0"/>
+    <rect x="770" y="282" width="245" height="16" rx="8" fill="#0d9488"/>
+    <rect x="1009" y="282" width="35" height="16" fill="#0284c7"/>
+    <rect x="1044" y="282" width="22" height="16" fill="#7c3aed"/>
+    <rect x="1066" y="282" width="14" height="16" rx="0" fill="#e11d48"/>
+
+    <g font-size="21" fill="#475569">
+      <text x="770" y="350">AFP</text>
+      <text x="1080" y="350" text-anchor="end">− $286.000</text>
+      <text x="770" y="390">Salud</text>
+      <text x="1080" y="390" text-anchor="end">− $175.000</text>
+      <text x="770" y="430">Cesantía</text>
+      <text x="1080" y="430" text-anchor="end">− $15.000</text>
+      <text x="770" y="470">Impuesto</text>
+      <text x="1080" y="470" text-anchor="end">− $41.842</text>
+    </g>
+  </g>
+</svg>

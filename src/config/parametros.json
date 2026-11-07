@@ -1,12 +1,15 @@
 {
-  "_comentario": "Parámetros legales que cambian pocas veces al año. UF y UTM NO van aquí: se consultan en vivo (ver src/lib/indicadores.ts). Para actualizar, edita este archivo y haz git push: Vercel publica solo.",
+  "_comentario": "Parámetros legales que cambian pocas veces al año. UF y UTM NO van aquí: se consultan en vivo (ver src/lib/indicadores.ts). Para actualizar, edita este archivo y haz git push: Vercel publica solo. En abril de 2028 la jornada legal baja a 40 horas (Ley 21.561): cambia jornadaSemanalHoras a 40.",
   "vigenteDesde": "2026-02",
   "revisadoEn": "2026-11-06",
   "fuentes": {
     "topes": "https://www.spensiones.cl/portal/institucional/594/w3-article-16921.html",
     "comisionesAfp": "https://www.spensiones.cl",
-    "impuesto": "https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/impuesto2026.htm"
+    "impuesto": "https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/impuesto2026.htm",
+    "jornada": "https://www.dt.gob.cl"
   },
+  "jornadaSemanalHoras": 42,
+  "recargoHoraExtra": 50,
   "topeImponibleUF": 90.0,
   "topeCesantiaUF": 135.2,
   "tasaAfp": 10,
