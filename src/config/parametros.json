@@ -1,0 +1,39 @@
+{
+  "_comentario": "Parámetros legales que cambian pocas veces al año. UF y UTM NO van aquí: se consultan en vivo (ver src/lib/indicadores.ts). Para actualizar, edita este archivo y haz git push: Vercel publica solo.",
+  "vigenteDesde": "2026-02",
+  "revisadoEn": "2026-11-06",
+  "fuentes": {
+    "topes": "https://www.spensiones.cl/portal/institucional/594/w3-article-16921.html",
+    "comisionesAfp": "https://www.spensiones.cl",
+    "impuesto": "https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/impuesto2026.htm"
+  },
+  "topeImponibleUF": 90.0,
+  "topeCesantiaUF": 135.2,
+  "tasaAfp": 10,
+  "tasaSalud": 7,
+  "cesantiaTrabajadorIndefinido": 0.6,
+  "afp": [
+    { "id": "uno", "nombre": "Uno", "comision": 0.46 },
+    { "id": "modelo", "nombre": "Modelo", "comision": 0.58 },
+    { "id": "planvital", "nombre": "PlanVital", "comision": 1.16 },
+    { "id": "habitat", "nombre": "Habitat", "comision": 1.27 },
+    { "id": "capital", "nombre": "Capital", "comision": 1.44 },
+    { "id": "cuprum", "nombre": "Cuprum", "comision": 1.44 },
+    { "id": "provida", "nombre": "Provida", "comision": 1.45 }
+  ],
+  "tramosImpuesto": [
+    { "hastaUTM": 13.5, "factor": 0, "rebajaUTM": 0 },
+    { "hastaUTM": 30, "factor": 0.04, "rebajaUTM": 0.54 },
+    { "hastaUTM": 50, "factor": 0.08, "rebajaUTM": 1.74 },
+    { "hastaUTM": 70, "factor": 0.135, "rebajaUTM": 4.49 },
+    { "hastaUTM": 90, "factor": 0.23, "rebajaUTM": 11.14 },
+    { "hastaUTM": 120, "factor": 0.304, "rebajaUTM": 17.8 },
+    { "hastaUTM": 150, "factor": 0.35, "rebajaUTM": 23.32 },
+    { "hastaUTM": null, "factor": 0.4, "rebajaUTM": 30.82 }
+  ],
+  "respaldo": {
+    "fecha": "2026-11-03",
+    "uf": 41263.57,
+    "utm": 72440
+  }
+}
